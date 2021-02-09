@@ -406,24 +406,18 @@
 
     <!-- Newsletter -->
             <div class="subscribe-footer">
-                <h2 class="footer-title">Подпишитесь на рассылку</h2>
-                <ul class="list form-subscribe-footer"> 
-                    <li>
-                        <form>
-                            <label class="label-mail-footer">
-                                <input type="email" name="email" placeholder="E-mail" class="input-mail-footer"/>
-                            </label>
-                        </form>
-                    </li>
-                    <li>
-                        <button type="submit" class="footer-button">
-                        Подписаться
-                        <svg class="join-icon icon-telegram" width="20px" height="20px">
-                            <use href="./img/Главная/sprite-icons.svg#icon-telegram"></use>
-                        </svg>
-                        </button>
-                    </li>
-                </ul>
+                <h2 class="footer-title">Подпишитесь на рассылку</h2>    
+                <form class="form-subscribe-footer">
+                    <label for="email-footer" class="label-mail-footer"></label>
+                    <input type="email" name="email" placeholder="E-mail" id="email-footer" class="input-mail-footer"/>
+                    
+                    <button type="submit" class="footer-button often-button">
+                    Подписаться
+                    <svg class="join-icon icon-telegram" width="20px" height="20px">
+                        <use href="./img/Главная/sprite-icons.svg#icon-telegram"></use>
+                    </svg>
+                    </button>
+                </form>
             </div>
 
         </div>
@@ -432,11 +426,63 @@
     <!-- MODAL -->
     <div  class="backdrop is-hidden" data-modal>
         <div class="hero-modal">
-            <button type="button" class="circle-icon" data-modal-close>
-                <svg class="modal-icons" width="18px" height="18px">
-                    <use href="./img/Главная/sprite-icons.svg#icon-close-back"></use>
-                </svg>
-            </button>
+            <div class="position-icon">
+                <button type="button" class="circle-icon" data-modal-close>
+                    <svg  width="18px" height="18px">
+                        <use href="./img/Главная/sprite-icons.svg#icon-close-back"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div>
+                <form class="modal-form">
+                    <h2 class="title-modal"> Оставьте свои данные, мы вам перезвоним </h2>
+
+                    <div class="speaker">
+                        <label for="name" class="speaker-title"> Имя </label>
+                        <input type="text" name="username" id="name" class="input-speaker-foooter"/>
+                        <svg class="modal-icons" width="18px" height="18px">
+                            <use href="./img/Главная/sprite-icons.svg#icon-modal-person"></use>
+                        </svg>
+                    </div>
+                    
+                    <div class="speaker"> 
+                        <label for="phone_number" class="speaker-title"> Телефон </label>
+                        <input type="tel" name="phone_number" id="phone_number" class="input-speaker-foooter"/>
+                        <svg class="modal-icons" width="18px" height="18px">
+                            <use href="./img/Главная/sprite-icons.svg#icon-modal-phone"></use>
+                        </svg>
+                    </div>
+                    
+                    <div class="speaker">
+                        <label for="email" class="speaker-title"> Почта </label>
+                        <input type="email" name="email" id="email" class="input-speaker-foooter"/>
+                        <svg class="modal-icons" width="18px" height="18px">
+                            <use href="./img/Главная/sprite-icons.svg#icon-modal-mail"></use>
+                        </svg>
+                    </div>
+
+                    <div class="speaker">
+                        <label for="comment" class="speaker-title"> Комментарий </label>
+                        <textarea 
+                            name="comment" 
+                            id="comment"  
+                            placeholder="Введите текст" 
+                            class="comment-blok input-speaker-foooter"
+                        ></textarea>
+                    </div>
+
+
+                    <input type="checkbox" value="принимаю" name="checkbox" value="" id="checkbox">
+                    <label for="checkbox">
+                        Соглашаюсь с рассылкой и принимаю <a href="#" target="_blank">Условия договора </a>
+                    </label>
+                    
+            
+                    <button type="submit" class="often-button"> Отправить </button>  
+                </form>
+
+            </div>
         </div>
     </div>
 
