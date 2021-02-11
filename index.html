@@ -426,63 +426,69 @@
     <!-- MODAL -->
     <div  class="backdrop is-hidden" data-modal>
         <div class="hero-modal">
-            <div class="position-icon">
+
+             <!-- button close-->
                 <button type="button" class="circle-icon" data-modal-close>
                     <svg  width="18px" height="18px">
                         <use href="./img/Главная/sprite-icons.svg#icon-close-back"></use>
                     </svg>
                 </button>
-            </div>
 
-            <div>
+           
                 <form class="modal-form">
-                    <h2 class="title-modal"> Оставьте свои данные, мы вам перезвоним </h2>
+                    <p class="title-modal"> Оставьте свои данные, мы вам перезвоним </p>
 
-                    <div class="speaker">
-                        <label for="name" class="speaker-title"> Имя </label>
-                        <input type="text" name="username" id="name" class="input-speaker-foooter"/>
+                    
+                    <label for="name" class="label-title"> Имя </label>
+                    <span class="modal-wrapper">
+                        <input type="text" name="username" id="name" class="input-modal-form"/>
                         <svg class="modal-icons" width="18px" height="18px">
                             <use href="./img/Главная/sprite-icons.svg#icon-modal-person"></use>
                         </svg>
-                    </div>
-                    
-                    <div class="speaker"> 
-                        <label for="phone_number" class="speaker-title"> Телефон </label>
-                        <input type="tel" name="phone_number" id="phone_number" class="input-speaker-foooter"/>
+                    </span>
+                
+                
+                    <label for="phone_number" class="label-title"> Телефон </label>
+                    <span class="modal-wrapper">
+                        <input type="tel" name="phone_number" id="phone_number" class="input-modal-form"/>
                         <svg class="modal-icons" width="18px" height="18px">
                             <use href="./img/Главная/sprite-icons.svg#icon-modal-phone"></use>
                         </svg>
-                    </div>
-                    
-                    <div class="speaker">
-                        <label for="email" class="speaker-title"> Почта </label>
-                        <input type="email" name="email" id="email" class="input-speaker-foooter"/>
+                    </span>
+                
+                
+                    <label for="email" class="label-title"> Почта </label>
+                    <span class="modal-wrapper">
+                        <input type="email" name="email" id="email" class="input-modal-form"/>
                         <svg class="modal-icons" width="18px" height="18px">
                             <use href="./img/Главная/sprite-icons.svg#icon-modal-mail"></use>
                         </svg>
-                    </div>
-
-                    <div class="speaker">
-                        <label for="comment" class="speaker-title"> Комментарий </label>
+                    </span>
+            
+                
+                    <label for="comment" class="label-title"> Комментарий </label>
+                    <span class="modal-wrapper">
                         <textarea 
                             name="comment" 
                             id="comment"  
                             placeholder="Введите текст" 
-                            class="comment-blok input-speaker-foooter"
+                            class="comment-blok input-modal-form"
                         ></textarea>
-                    </div>
+                    </span>
+                    
 
 
-                    <input type="checkbox" value="принимаю" name="checkbox" value="" id="checkbox">
-                    <label for="checkbox">
-                        Соглашаюсь с рассылкой и принимаю <a href="#" target="_blank">Условия договора </a>
+                    <input type="checkbox" value="принимаю" name="checkbox" value="" id="checkbox" class="checkbox-input">
+                    <label for="checkbox" class="checkbox-label">
+                        <span class="checkbox-icon-border"></span>
+                        Соглашаюсь с рассылкой и принимаю<a href="#" target="_blank">Условия договора</a>
                     </label>
                     
             
                     <button type="submit" class="often-button"> Отправить </button>  
                 </form>
 
-            </div>
+            <!-- </div> -->
         </div>
     </div>
 
