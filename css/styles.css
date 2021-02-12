@@ -894,16 +894,17 @@ a {
 
 .checkbox-input:checked + .checkbox-label::before {
   background-size: contain;
-  background-origin: border-box;
-  border-color: var(--button-hover-color);
-  background-color: var(--button-hover-color);
+  border: 2px solid var(--main-text-color);
 }
 
 .checkbox-input:focus + .checkbox-label::before {
   background-image: url("../img/icon-check.svg");
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* border-color: var(--button-hover-color); */
+
   background-color: var(--button-hover-color);
+  border-color: var(--button-hover-color);
+
+  background-origin: border-box;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-icon-border {
